@@ -1,0 +1,466 @@
+html{
+    font-size: 100%;
+    font-family: rubik, sans-serif;
+    direction: ltr;
+}
+header p{
+    background-color: #1700f4;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+header nav {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    background-color: white;
+    position: sticky;
+    top: 10px;
+}
+header nav ul li ul{
+    display: none;
+}
+li a{
+    text-decoration: none;
+    text-align: center;
+    color: #00095b;
+    font-weight: bold;
+}
+
+.menu-container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+    position: relative;
+}
+.menu-container li:hover{
+    border-bottom: 2px solid #00095b;
+}
+.menu-container li:hover ul{
+    display: block;
+    position: absolute;
+    background-color: white;
+}.menu-container li ul li{
+    padding: .7rem;
+    border-bottom: 1px solid grey;
+}
+.menu-container li ul li a{
+    color: #4d4d53;
+    font-size: 1.2rem;
+    font-weight: 100;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem;
+}
+
+.menu-logo{
+    text-align: center;
+}
+.menu-logo img{
+    width: 20%;
+}
+.menu-search{
+    display: flex;
+    justify-content:right ;
+    margin-top: 1rem;
+}
+.menu-search li{
+    width: 20%;
+    text-align: center;
+    box-sizing: border-box;
+}
+.menu-search li:hover a{
+    border-bottom: 2px solid #00095b;
+}
+.menu-search img{
+    width: 30%;
+    margin-bottom: .7rem;
+}
+.intro{
+    background: url(./img/background.jpeg) center/cover no-repeat;
+    width: 100%;
+    height: 100vh;
+    padding-top: 1.5rem;
+    margin-bottom: 100px;
+}
+.intro div{
+    width: 30%;
+}
+.intro div h1{
+    text-transform: capitalize;
+    color: white;
+    font-size: 3rem;
+    margin: 5rem 2rem 2rem;
+    font-weight: bold;
+}
+.intro div a{
+    text-decoration: none;
+    color: #00095b;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 0 0 10px black;
+    padding: .5rem;
+    margin-left: 2rem;
+    font-weight: bold;
+}
+.details{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+.details h2{
+    color: #00095b;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+.details h4{
+    color: #4d4d53;
+    width: 60%;
+    margin: 1rem auto;
+    font-size: 1rem;
+    line-height: 1rem;
+}
+.details p{
+    width: 60%;
+    margin: 1rem auto 2rem;
+    font-size: .8rem;
+    word-spacing: .2rem;
+    line-height: 1rem;
+}
+#scale{
+    display: flex;
+    justify-content: center;
+}
+#scale a{
+    text-decoration: none;
+    background-color: #00095b;
+    color: white;
+    padding: 1rem;
+    border-radius: 25px;
+    margin: 1rem;
+}
+#one:hover{
+    transform: scale(1.2);
+    transition-duration: .2s;
+}
+#two:hover{
+    transform: scale(1.2);
+    transition-duration: .2s;
+}
+#one:hover a{
+    background-color: #0e30f0;
+}
+#two:hover a{
+    background-color: #0e30f0;
+}
+.oneimg{
+    width: 100%;
+    text-align: center;
+}
+.oneimg img{
+    width: 90%;
+    margin: 1rem auto;
+}
+.container{
+    direction: left;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 4rem;
+    
+}
+.container .right {
+    width: 40%;
+    box-shadow: 0 0 15px grey;
+    padding-bottom: 1.5rem;
+    text-align: center;
+}
+.container .left{
+    width: 40%;
+    box-shadow: 0 0 15px grey;
+    padding-bottom: 1.5rem;
+    text-align: center;
+}
+.container img{
+    width: 100%;
+    height: 100vh;
+}
+.container h3{
+    color: #00095b;
+    font-size: 2rem;
+    margin: .5rem .5rem 2rem;
+    text-transform: capitalize;
+}
+.cover{
+    width: 100%;
+    text-align: left;
+    margin-bottom: 2.5rem;
+}
+.container a{
+    text-transform: capitalize;
+    text-decoration: none;
+    background-color: #00095b;
+    color: white;
+    padding: .7rem;
+    border-radius: 25px;
+    margin: 1.5rem;
+    font-size: 1rem;
+}
+.nav{
+    border: 1px solid rgb(73, 72, 72);
+    border-radius: 25px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr;
+    width: 50%;
+    margin: 4rem auto;
+}
+.item{
+    text-align: center;
+    margin: 1rem;
+    color: #00095b;
+}
+#change{
+   background-color: #00095b;
+   color: aliceblue;
+   margin: 0;
+   padding-top: 1rem;
+   border-radius: 20px;
+   box-shadow: 0 10px 15px #16228f;
+}
+.img{
+    width: 100%;
+}
+.img img {
+    width: 100%;
+    height: 90vh;
+}
+.sub{
+    width: 50%;
+    text-align: center;
+    margin: 1.5rem auto 5rem;
+}
+.sub h5{
+    color: #00095b;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.sub h6{
+    color: gray;
+    margin-bottom: 3rem;
+}
+.sub a{
+    text-decoration: none;
+    background-color: #00095b;
+    color: white;
+    padding: 1rem;
+    border-radius: 25px;
+}
+.background{
+    background: url(./img/img\ 3.webp) center / cover no-repeat;
+    width: 90%;
+    margin: auto;
+    padding: 2rem;
+    height: 90vh;
+}
+.background h3{
+    font-size: 2rem;
+    color: #00095b;
+    margin: 2rem;
+    margin-left: 0;
+}
+.background h4{
+    color: #4d4d53;
+    margin: 1rem;
+    margin-left: 0;
+}
+.background a {
+    display: inline-block;
+    text-decoration: none;
+    color: #00095b;
+    font-size: 1.2rem;
+    margin: 1.5rem;
+    margin-left: 0;
+}
+.background a img{
+    width: 15px;
+    margin: -1px .1rem;
+}
+.h2{
+    text-align: center;
+    margin-bottom: 3.5rem;
+}
+.h2 h2{
+    color: #00095b;
+    font-size: 2rem;
+    margin: 2rem auto;
+}
+#img{
+    margin: 2.5rem;
+    width: 50%;
+}
+#img img{
+    width: 100%;
+}
+#img h3{
+    color: #00095b;
+    font-size: 1.5rem;
+    margin: 1.5rem;
+    margin-left: 0;
+}
+img h4{
+    color: #4d4d53;
+    font-size: 1rem;
+    margin-bottom: 3rem;
+    margin-left: 0;
+}
+#link{
+    text-align: center;
+    padding: 3rem;
+}
+#link a{
+    text-decoration: none;
+    background-color: #00095b;
+    color: white;
+    padding: 1rem;
+    border-radius: 25px;
+}
+#text{
+    text-align: center;
+    width: 100%;
+}
+#text h2{
+    color: #00095b;
+    font-size: 2.5rem;
+}
+#text p{
+    color: #4d4d53;
+    width: 55%;
+    margin: 2rem auto;
+}
+#text a{
+    margin: 3rem auto 1.5rem;
+    text-decoration: none;
+    color: #0e30f0;
+    text-transform: uppercase;
+    margin: 1.5rem auto 3rem;
+}
+#text a div{
+    transform: rotate(90deg);
+    display: inline-block;
+}
+section header{
+    background-color: #00095b;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+#menu {
+    display:grid;
+    grid-template-columns:1fr 3fr;
+    padding-top: 1rem;
+}
+#menu h2{
+    color: white;
+    font-weight: bold;
+}
+#menu ul{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+#menu ul li a{
+    color: white;
+    font-weight: 500;
+    text-align: center;
+    padding: 1rem;
+}
+#search{
+    width: 50%;
+}
+#search input{
+    background-color: #00095b;
+    border: 2px solid white;
+    width: 60%;
+    padding: .5rem;
+}
+#search input::placeholder{
+    color: white;
+    font-size: 1rem;
+}
+#list{
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    background-color: #00142e;
+}
+#list div{
+    margin: 0 1.5rem;
+}
+#list h2{
+    color: white;
+    font-weight: bold;
+    margin: 2rem auto;
+}
+#list ul li {
+    margin: .5rem 0;
+}
+#list ul li a{
+    color: grey;
+    font-weight: 300;
+    margin: 1rem 0;
+}
+#bala{
+    display: flex;
+    justify-content: space-between;
+}
+#bala div{
+    width: 50%;
+    padding: 1rem;
+    margin: 1.5rem;
+}
+#bala div img{
+    width:45px;
+    margin: -.5rem .5rem;
+}
+footer a{
+    font-size: 1.2rem;
+    color: #00095b;
+}
+#media{
+    display: flex;
+    justify-content: end;
+}
+#media h2{
+    margin: .5rem;
+}
+#media ul{
+    display: flex;
+    justify-content: end;
+    direction: rtl;
+}
+#paien{
+    display: block;
+    width: 100%;
+}
+#paien div{
+    display: flex;
+    justify-content: start;
+    margin:0 1.5rem;
+    padding: 1rem;
+}
+#paien div img{
+    width: 25px;
+    margin: -.5rem .3rem;
+}
+#paien section{
+    width: 90%;
+    padding: 1.5rem;
+    margin: 1rem;
+}
+#paien section a{
+    display: inline-block;
+    font-size: 1rem;
+    color: #4d4d53;
+    text-decoration: none;
+    margin:.7rem;
+}
