@@ -1,0 +1,51 @@
+@media screen and (max-width: 1024px) {
+    #right-nav{
+        display: none;
+    }
+    #left-nav ul{
+        display: none;
+    }
+    #burger{
+        display: block;
+        width: 3%;
+        padding: 1rem;
+    }
+    #demo div{
+        display: block;
+        text-align: center;
+    }
+} 
+@media screen and (max-width:890px){
+    #footer-container{
+        display: block;
+        text-align: center;
+    }
+    header{
+        display: block;
+    }
+    #left-head{
+        width: 100%;
+        margin: 4rem auto 2rem;
+        line-height: 1.5rem;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    #left-head h2{
+        width: 100%;
+        margin: 2rem auto;
+        font-size: 1rem;
+    }
+    #right-head{
+        width: 100%;
+        margin: 1rem auto;
+    }
+    #right-head img{
+        max-height: 50vh;
+    }
+    #features{
+        display: block;
+    }
+    #down{
+        padding-top: 7rem;
+    }
+}
