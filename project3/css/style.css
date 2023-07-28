@@ -56,3 +56,49 @@ html{
 #main-menu .container .right-section div:hover a{
     color:var(--icon-color) ;
 }
+/* search section style */
+#header-items{
+    padding: 1rem;
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: end;
+}
+#header-items #search{
+    margin: 2rem 1rem;
+}
+#header-items #search #search-box{
+    border: 1px solid rgba(128, 128, 128, 0.49);
+    padding: .5rem;
+}
+#header-items #search #search-box input{
+    border: none;
+}
+/* header logo section */
+#header-logo{
+    text-align: center;
+    width: 50%;
+    margin: 1rem;
+}
+#header-logo span{
+    display: block;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+#header-logo a span:last-child{
+    font-family: rubik, sans-serif;
+    color: grey;
+    font-size: .7rem;
+    font-weight: 100;
+    margin-top: .3rem;
+}
+
+
+
+
+
+
+
+
+
