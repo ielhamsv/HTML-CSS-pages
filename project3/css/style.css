@@ -1,0 +1,58 @@
+
+html{
+    direction: ltr;
+}
+:root{
+    --dark-color: #000000;
+    --icon-color:#d9168d;
+    --light-color:#ffffff;
+}
+/* main menu style */
+#main-menu .container{
+    display: grid;
+    grid-template-columns: 2fr 3fr 2fr;
+    background-color: var(--dark-color);
+    width: 100%;
+    font-family: rubik, sans-serif;
+}
+/* left section style */
+#main-menu .container .left-section div{
+    display: inline-block;
+    float: right;
+    margin: 1rem;
+}
+#main-menu .container .left-section div a{
+    color: var(--light-color);
+    font-size: .7rem;
+}
+#main-menu .container .left-section div:hover a{
+    color:var(--icon-color) ;
+}
+/* center section style */
+#main-menu .container .center-section div{
+    text-align: center;
+    margin: 1rem;
+}
+#main-menu .container .center-section div a{
+    color: var(--light-color);
+    font-size: .8rem;
+}
+/* right section style */
+#main-menu .container .right-section div{
+    display: inline-block;
+    float: left;
+    margin: 1rem;
+}
+#main-menu .container .right-section div a{
+    color: var(--light-color);
+    font-size: .7rem;
+}
+#main-menu .container .right-section div #cart{
+    font-size: 1rem;
+}
+#main-menu .container .right-section div #cart span{
+    color: var(--icon-color);
+}
+#main-menu .container .right-section div:hover a{
+    color:var(--icon-color) ;
+}
