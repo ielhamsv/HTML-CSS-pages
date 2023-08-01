@@ -1,0 +1,32 @@
+@media screen and (max-width:991px) {
+    #main-menu{
+        display: none;
+    }
+    .header-nav #header-menu{
+        display: none;
+    }
+   #header-items #search{
+        display: none;
+    }
+    #header-items{
+        justify-content:center ;
+    }
+    .header-nav #header-menu li div,ul{
+        display: none;
+    }
+    #left-header-menu{
+        display: block;
+        float: left;
+        font-size: 1.5rem;
+    }
+    #right-header-menu{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: .5rem;
+        float: right;
+        font-size: 1.5rem;
+    }
+    #shop-now-back{
+        margin-top: 2rem;
+    }
+}

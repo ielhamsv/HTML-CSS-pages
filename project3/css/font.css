@@ -9,3 +9,8 @@
     font-family: "italik";
     src: url(../fonts/italik/Rubik-SemiBoldItalic.ttf) format("truetype");
 }
+
+@font-face {
+font-family: "Borel";
+    src: url("../fonts/Borel/Borel-Regular.ttf") format("truetype");
+}

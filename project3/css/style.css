@@ -6,7 +6,6 @@ html{
     --icon-color:#d9168d;
     --light-color:#ffffff;
 }
-
 /* main menu style */
 
 
@@ -15,7 +14,7 @@ html{
     grid-template-columns: 2fr 3fr 2fr;
     background-color: var(--dark-color);
     width: 100%;
-    font-family: rubik, sans-serif;
+    font-family: "rubik", sans-serif;
 }
 
 
@@ -92,6 +91,9 @@ html{
 #header-items #search #search-box input{
     border: none;
 }
+#header-items #search #search-box input:focus-visible{
+    outline: 0;
+}
 
 
 /* header logo section */
@@ -109,7 +111,7 @@ html{
     font-weight: bold;
 }
 #header-logo a span:last-child{
-    font-family: rubik, sans-serif;
+    font-family: "rubik", sans-serif;
     color: grey;
     font-size: .7rem;
     font-weight: 100;
@@ -120,7 +122,7 @@ html{
 /* header nav style */
 
 
-#header-nav{
+.header-nav{
     width: 70%;
     margin: auto;
 }
@@ -129,7 +131,7 @@ html{
 /* header nav ul style*/
 
 
-#header-nav #header-menu{
+.header-nav #header-menu{
     display:grid;
     grid-template-columns: repeat(5,2fr);
 }
@@ -138,14 +140,13 @@ html{
 /* header nav ul li style*/
 
 
-#header-nav #header-menu li{
+.header-nav #header-menu > li{
     display: block;
     position: relative;
-    padding: .5rem 0;
     overflow: hidden;
     text-align: center;
 }
-#header-nav #header-menu li:hover span{
+.header-nav #header-menu li:hover span{
     right: 0;
     transition: 500ms;
 }
@@ -154,11 +155,11 @@ html{
 /* header nav ul li span style*/
 
 
-#header-nav #header-menu li span{
+.header-nav #header-menu li span{
     width: 100%;
     display: block;
     border-bottom: 2px solid var(--icon-color);
-    position: absolute;
+    position: relative;
     right: 100%;
     margin-top: .3rem;
 }
@@ -167,45 +168,101 @@ html{
 /* header nav ul li a style*/
 
 
-#header-nav #header-menu li a{
+.header-nav #header-menu li a{
     font-size: .9rem;
     padding: .3rem;
-    font-family: rubik, sans-serif;
+    font-family: "rubik", sans-serif;
     color: black;
     font-weight: bold;
+    position: relative;
 }
-#header-nav #header-menu li:hover > a{
+.header-nav #header-menu li:hover > a{
     color: var(--icon-color);
  }
 
 
-/* header nav ul li ul style*/
+/* responsive header nav style */
 
-#header-nav #header-menu li ul{
-    max-height: 0;
-    overflow: hidden;
-    background-color: var(--light-color);
-    margin-top: .3rem;
-    transition-duration:1s;
+
+#left-header-menu{
+    display: none;
 }
-#header-nav #header-menu li:hover ul{
-    max-height:10vh;
+#right-header-menu{
+    display: none;
+}
+#right-header-menu span{
+    color: var(--icon-color);
+    font-size: 1.5rem;
+}
+#right-header-menu a,
+#left-header-menu a{
+    color: black;
+}
+#right-header-menu a:hover i,
+#left-header-menu a:hover i{
+    color: var(--icon-color);
 }
 
-/* header nav ul li div style*/
+/* shop now style */
 
-#header-nav #header-menu li > div{
-    max-height: 0;
-    overflow: hidden;
-    margin-top: .3rem;
-    transition-duration:1s;
-    display: grid;
-    grid-template-columns:repeat(3,1fr) ;
-    grid-template-rows: repeat(3,1fr);
+#shop-now-back{
+    background: url("../img/img1.jpg") center/cover no-repeat;
+    width: 100%;
+    position: relative;
 }
-#header-nav #header-menu li:hover > div{
-    max-height:60vh;
+
+#shop-now-back section{
+    width: 60%;
+    margin: auto;
+    padding: 7rem;
 }
+#shop-now-back section h2{
+    font-family: "Borel";
+    font-size: 2rem;
+}
+#shop-now-back section p{
+    font-size: 3.5rem;
+    width: 70%;
+    text-align: left;
+    margin-bottom: 2rem;
+}
+#shop-now-back section a{
+    color: white;
+    background: var(--icon-color);
+    font-family: "rubik";
+    font-size: .7rem;
+    padding: 1rem;
+}
+#shop-now-back div {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+}
+#shop-now-back div a i:last-child{
+    color: var(--icon-color);
+}
+#shop-now-back #dir-left{
+    float: left;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    font-size: 4rem;
+}
+#shop-now-back #dir-right{
+    float: right;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    font-size: 4rem;
+}
+#dir-right:hover,#dir-left:hover{
+    color: var(--icon-color);
+}
+
+
+
+
+
 
 
 
