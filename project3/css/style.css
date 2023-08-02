@@ -259,16 +259,105 @@ html{
     color: var(--icon-color);
 }
 
+/* block 1 style */
+
+
+#block1{
+    width: 85%;
+    margin: 1.5rem auto;
+    display:flex;
+    justify-content: space-evenly;
+    position: relative;
+    max-height: 60vh;
+}
+#block1 #left-img {
+    position: relative;
+    width: 50%;
+    overflow: hidden;
+}
+#block1 #left-img a{
+    position: relative;
+    width: 100%;
+}
+#block1 #left-img a img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+#block1 #left-img a div{
+    position: absolute;
+    top: 50%;
+    top: -250px;
+    padding: 1.5rem;
+}
+#block1 #left-img a div span{
+    font-family: "rubik";
+    font-size: .7rem;
+}
+#block1 #left-img a div h2{
+    font-size: 2rem;
+    font-weight: bold;
+    width: 60%;
+    line-height: 2.2rem;
+    margin: .5rem 0;
+}
+#block1 #left-img a div button{
+    margin-top: 2rem;
+    color: var(--icon-color);
+    font-size: .7rem;
+    border: none;
+    border-bottom: 1px solid var(--icon-color);
+    padding: 0;
+}
+#block1 #left-img a:hover img{
+    transform: scale(1.1);
+    transition: 500ms;
+}
 
 
 
-
-
-
-
-
-
-
-
-
-
+#block1 #right-img{
+    position: relative;
+    width: 40%;
+    overflow: hidden;
+    text-align: center;
+}
+#block1 #right-img a{
+    width: 100%;
+    position: relative;
+}
+#block1 #right-img a img{
+    width: 100%;
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+}
+#block1 #right-img a:hover img{
+    transform: scale(1.1);
+    transition: 500ms;
+}
+#block1 #right-img a section{
+    top: -200px;
+    position: absolute;
+    background: var(--light-color);
+    width: 60%;
+    margin: auto;
+    padding: 1rem;
+    left: 15%;
+}
+#block1 #right-img a section span{
+    font-family: "rubik";
+    font-size: .7rem;
+}
+#block1 #right-img a section h2{
+    font-size: 2rem;
+    color: var(--icon-color);
+    margin-bottom: 1rem;
+}
+#block1 #right-img a section span:last-child{
+    border: none;
+    border-bottom: 1px solid grey;
+    border-top: 1px solid grey;
+    font-size: 1.5rem;
+}
