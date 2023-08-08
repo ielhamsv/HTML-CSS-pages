@@ -498,3 +498,81 @@ font-size: 2.5rem;
     width: 100%;
     color: var(--icon-color);
 }
+
+
+/*Parallax section style*/
+
+
+#parallax{
+    width: 100%;
+    height: 85vh;
+    background-image: url("../img/parallax.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+}
+#parallax #right-parallax {
+    background-color: var(--icon-color);
+    display: inline-block;
+    max-width: 35%;
+    margin: 3rem auto;
+    text-align: left;
+    padding: 2rem;
+}
+#parallax #left-parallax{
+    display: inline-block;
+    max-width: 40%;
+    margin:10rem auto;
+    text-align: left;
+}
+#parallax #right-parallax i{
+    color: var(--light-color);
+    font-size: 3.5rem;
+}
+#parallax #right-parallax p{
+    color: var(--light-color);
+    font-size: 1.1rem;
+    font-family: "rubik";
+    line-height: 2rem;
+    margin: 1rem auto;
+}
+#parallax #right-parallax #pro{
+    display: flex;
+}
+#parallax #right-parallax #pro img{
+    display: inline-block;
+    border-radius:50%;
+}
+#parallax #right-parallax #pro div {
+    display: inline-block;
+    margin: 1rem;
+}
+#parallax #right-parallax #pro div h2{
+    font-family: "rubik";
+    color: var(--light-color);
+    text-transform:capitalize ;
+}
+#parallax #right-parallax #pro div span{
+    font-family: "rubik";
+    color: var(--light-color);
+    font-size: .8rem;
+    text-transform:capitalize ;
+}
+#parallax #left-parallax span{
+    color: var(--light-color);
+    font-size: 1.5rem;
+    font-family: "rubik";
+    margin: 2rem auto;
+}
+#parallax #left-parallax h2{
+    font-size: 2.6rem;
+    color: var(--light-color);
+    margin: 2rem auto 6rem;
+}
+#parallax #left-parallax a{
+    color: var(--icon-color);
+    font-family: "rubik";
+    text-decoration: underline;
+}
