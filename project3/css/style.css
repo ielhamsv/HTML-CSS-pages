@@ -444,8 +444,8 @@ font-size: 2.5rem;
 #container{
     width: 85%;
     margin:3rem auto;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
 }
 #container div:not(.star){
     margin: .5rem;
@@ -508,9 +508,6 @@ font-size: 2.5rem;
 #container div:not(.star) a {
     width: 100%;
 }
-#container .hover:hover img{
-    right: 0;
-}
 #container  div:not(.star) a img{
     width: 100%;
     height: 100%;
@@ -520,6 +517,59 @@ font-size: 2.5rem;
     bottom: 0;
     top: 0;
     transition: 1s;
+}
+#container .hover:hover img{
+    right: 100%;
+}
+#container  div:not(.star) a #discount{
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    background-color: var(--icon-color);
+    color: white;
+    font-size: .8rem;
+    font-family: "rubik";
+    padding: .2rem;
+}
+#container  div:not(.star) a #add{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--icon-color);
+    color: white;
+    font-size: .9rem;
+    font-family: "rubik";
+    padding: .5rem;
+    text-align: center;
+    opacity: 0;
+    transition: 200ms;
+}
+#container  div:not(.star) a .ri-eye-fill{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    opacity: 0;
+}
+#container  div:not(.star) a .ri-refresh-line{
+    position: absolute;
+    top: 35px;
+    right: 10px;
+    opacity: 0;
+}
+#container  div:not(.star) a .ri-heart-fill{
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    opacity: 0;
+}
+#container .hover:hover a i:hover{
+    color: var(--icon-color);
+}
+#container .hover:hover #add,
+#container .hover:hover a i
+{
+    opacity: 1;
 }
 #container .star > a{
     text-align: center;
