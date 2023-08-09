@@ -840,4 +840,62 @@ font-size: 2.5rem;
     width: 70%;
 }
 
+/* footer style */
 
+footer{
+    width: 100%;
+    height: 60vh;
+    background-color: var(--dark-color);
+}
+footer #content{
+    display: flex;
+    margin: 5rem;
+    justify-content: space-evenly;
+}
+footer #content div{
+    margin: 2rem;
+}
+footer #content div h3{
+    color: white;
+    font-family: "rubik";
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 1rem;
+}
+footer #content div h6{
+    color: #545050;
+    font-family: "rubik";
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-top: 1rem;
+    font-size: .9rem;
+    text-transform: capitalize;
+}
+footer #content div a{
+    color: #545050;
+    font-family: "rubik";
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-top: 1rem;
+    font-size: .9rem;
+    display: block;
+    text-transform: capitalize;
+}
+footer #content div a:hover{
+    color: var(--icon-color);
+}
+#footer {
+    border-top: 1px solid grey ;
+    margin: 0 5rem;
+}
+#footer #left-footer{
+    float: left;
+    margin-top: 1rem;
+}
+#footer #right-footer{
+    float: right;
+    margin-top: 1rem;
+}
+#footer #left-footer a{
+    color: grey;
+}
