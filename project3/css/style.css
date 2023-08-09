@@ -704,3 +704,82 @@ font-size: 2.5rem;
 #the-blog > div a div{
     display: inline-block;
 }
+
+/*items style */
+
+#items{
+    width: 85%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin:3rem auto;
+    grid-gap: 10px;
+}
+#items .item .img{
+    background-color: var(--dark-color);
+    width: 100%;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+#items .item .img img{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 500ms;
+}
+#items .item .img .ri-search-line{
+    position: absolute;
+    font-size: 1.5rem;
+    color: var(--light-color);
+    background-color: var(--dark-color);
+    border-radius: 50%;
+    padding: .5rem;
+    top: 50%;
+    left: 40%;
+    opacity: 0;
+}
+#items .item .img .ri-links-fill{
+    position: absolute;
+    font-size: 1.5rem;
+    color: var(--light-color);
+    background-color: var(--dark-color);
+    border-radius: 50%;
+    padding: .5rem;
+    top: 50%;
+    left: 55%;
+    opacity: 0;
+}
+#items .item .img i:hover{
+    background-color: var(--icon-color);
+    transition: 300ms;
+}
+#items .item:hover .img img{
+    opacity: .7;
+    transform: scale3d(1.2,1.2,1.2);
+}
+#items .item:hover .img i{
+    opacity: 1;
+}
+#items .item .details span{
+    color: var(--icon-color);
+    font-size: .8rem;
+    font-family: "rubik";
+    margin: 1rem 0;
+}
+#items .item .details h2{
+    font-family: "rubik";
+    font-size: 1.3rem;
+    margin: 1rem 0;
+}
+#items .item .details p {
+    font-family: "rubik";
+    color: grey;
+}
+
+
+
