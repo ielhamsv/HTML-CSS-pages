@@ -789,7 +789,7 @@ font-size: 2.5rem;
     display: grid;
     grid-template-columns: 2fr 2fr 3fr;
     padding:2rem 1rem;
-    margin:6rem auto;
+    margin:6rem auto 3rem;
 }
 #subscribe div h2{
     font-size: 2.3rem;
@@ -827,8 +827,17 @@ font-size: 2.5rem;
     font-family: "rubik";
 }
 
+/* brands style */
 
-
-
+#brands{
+    width: 85%;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    margin: 0 auto 2rem;
+    text-align: center;
+}
+#brands div img{
+    width: 70%;
+}
 
 
