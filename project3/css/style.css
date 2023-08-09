@@ -781,5 +781,54 @@ font-size: 2.5rem;
     color: grey;
 }
 
+/* subscribe style */
+
+#subscribe{
+    width: 85%;
+    border: 5px solid var(--icon-color);
+    display: grid;
+    grid-template-columns: 2fr 2fr 3fr;
+    padding:2rem 1rem;
+    margin:6rem auto;
+}
+#subscribe div h2{
+    font-size: 2.3rem;
+    font-weight: bold;
+    width: 100%;
+}
+#subscribe div p{
+    font-family: "rubik";
+    color: grey;
+    margin-left: .5rem;
+}
+#subscribe div p span{
+    color: var(--icon-color);
+    font-weight: bold;
+}
+#subscribe div input{
+    display: inline-block;
+    width: 70%;
+    border: none;
+    background-color: rgba(140, 135, 135, 0.63);
+    padding: .7rem .5rem;
+}
+#subscribe div input:focus-visible{
+    outline: none;
+}
+#subscribe div input::placeholder{
+    color: #332f2f;
+}
+#subscribe div button{
+    display: inline-block;
+    background-color: var(--icon-color);
+    border: none;
+    padding: .7rem .5rem;
+    color: white;
+    font-family: "rubik";
+}
+
+
+
+
 
 
