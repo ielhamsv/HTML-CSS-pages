@@ -1,16 +1,54 @@
-const dir_right = document.getElementById("dir-right")
-const dir_left = document.getElementById("dir-left")
-const slide = document.getElementById("slide")
-const dot_right=document.getElementById("dir-right")
-const dot_left=document.getElementById("dir-left")
+const s_left=document.getElementById("s-left");
+const s_right=document.getElementById("s-right");
+let slide=document.getElementsByClassName("slide")
+let dot=document.getElementsByClassName("dot")
 
-
-dir_right.addEventListener("click",onclick)
-dir_left.addEventListener("click",onclick)
-
-function onclick(e){
-    e.preventDefault()
-
-
-    slide.classList.toggle("switch")
+let n=0;
+let i;
+function disno(){
+    for(i=0;i<slide.length;i++){
+        slide[i].style.display="none"
+    }
 }
+
+function noactive(){
+    for (i=0;i<dot.length;i++){
+        dot[i].classList.remove("active")
+    }
+}
+
+s_right.addEventListener("click",function (e){
+    e.preventDefault()
+    n++;
+    disno();
+    if(n>slide.length-1){
+        n=0
+    }
+    disno()
+    slide[n].style.display="block"
+    noactive()
+    dot[n].classList.add("active")
+})
+
+s_left.addEventListener("click",function (e){
+    e.preventDefault()
+    n++;
+    if(n>slide.length-1){
+        n=0
+    }
+    disno()
+    slide[n].style.display="block"
+    noactive()
+    dot[n].classList.add("active")
+})
+
+setInterval(function (){
+    n++;
+    if(n>slide.length-1){
+        n=0
+    }
+    disno()
+    slide[n].style.display="block"
+    noactive()
+    dot[n].classList.add("active")
+},2500)
